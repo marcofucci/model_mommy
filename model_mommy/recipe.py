@@ -62,7 +62,7 @@ def foreign_key(recipe):
     """
     return RecipeForeignKey(recipe)
 
-def seq(value, increment_by=1):
-    return mommy.Sequence(value, increment_by=increment_by)
+def seq(value, *args, **kwargs):
+    return mommy.Sequence(value, *args, **kwargs)
 
 
